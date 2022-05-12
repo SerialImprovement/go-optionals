@@ -30,7 +30,7 @@ func main() {
 
 	select {
 	case v := <-some:
-        log.Printf("Hello, %s!", v)
+		log.Printf("Hello, %s!", v)
 	case <-none:
 		log.Print("oh dear i should do something else")
 	}
@@ -51,12 +51,12 @@ import "log"
 
 func main() {
 	var opt *string
-	
+
 	if opt != nil {
 		log.Printf("Hello, %s!", *opt)
-    } else {
+	} else {
 		log.Print("oh dear i should do something else")
-    }
+	}
 }
 ```
 
